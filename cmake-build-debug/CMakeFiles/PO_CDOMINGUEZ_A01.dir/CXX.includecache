@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/cat_dominguez/CLionProjects/PO-CDOMINGUEZ-A01/Automovil.cpp
+Automovil.h
+/Users/cat_dominguez/CLionProjects/PO-CDOMINGUEZ-A01/Automovil.h
+
+/Users/cat_dominguez/CLionProjects/PO-CDOMINGUEZ-A01/Automovil.h
+iostream
+-
+
+/Users/cat_dominguez/CLionProjects/PO-CDOMINGUEZ-A01/main.cpp
+iostream
+-
+Automovil.h
+/Users/cat_dominguez/CLionProjects/PO-CDOMINGUEZ-A01/Automovil.h
+
