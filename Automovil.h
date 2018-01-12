@@ -1,33 +1,40 @@
 //
-// Created by Catalina Domínguez on 1/8/18.
+// Created by Catalina Domínguez on 1/11/18.
 //
 
-#ifndef PO_CDOMINGUEZ_A01_AUTOMOVIL_H
-#define PO_CDOMINGUEZ_A01_AUTOMOVIL_H
+#ifndef PO_CDOMINGUEZ_A02_AUTOMOVIL_H
+#define PO_CDOMINGUEZ_A02_AUTOMOVIL_H
 
-#include <iostream>
+#import <iostream>
 
 class Automovil {
+private:
     //Atributos
+    std::string marca, modelo, color;
+    float precio;
+    int ocupantes;
+
 public:
-    std::string marca;
-    std::string modelo;
-    std::string color;
-//    float precio;
-//    int ocupantes;
-//    private int kilometraje;
-    std::string precio;
-    std::string ocupantes;
-    std::string kilometraje;
-
-    //Métodos
     //Constructor
+    //Default
     Automovil();
+    //Valores Iniciales
+    Automovil(std::string marca, std::string modelo, std::string color, int ocupantes, float precio);
+    //Métodos
+    void avanzar(int kilometros);
 
-    //Mostrar información
-    std::string avanzar();
+    //Getters y Setters
+    void setMarca(std::string marca);
+    void setModelo(std::string modelo);
+    void setColor(std::string color);
+    void setKilometraje(int kilometraje);
+    std::string &getMarca ();
+    std::string &getModelo ();
+    std::string &getColor ();
+    int &getKilometraje();
 
+    int kilometraje;
 };
 
 
-#endif //PO_CDOMINGUEZ_A01_AUTOMOVIL_H
+#endif //PO_CDOMINGUEZ_A02_AUTOMOVIL_H

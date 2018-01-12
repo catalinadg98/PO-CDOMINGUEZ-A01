@@ -1,22 +1,27 @@
 //
-// Created by Catalina Domínguez on 1/8/18.
+// Created by Catalina Domínguez on 1/11/18.
 //
 
 #include "Automovil.h"
 
-//Definición de métodos
-//Constructor
-
 Automovil::Automovil() {
-    this->marca="Dodge";
-    this->modelo="2018";
-    this->color="Blanco";
-    this->precio="275000";
-    this->ocupantes="5";
-    this->kilometraje="20000";
+    this->marca="";
+    this->modelo="";
+    this->color="";
+    this->precio=0.0;
+    this->ocupantes=0;
+    this->kilometraje=0;
 }
 
-std::string Automovil::avanzar(){
-    return "Marca: " +this->marca + ", Modelo: " +this->modelo + ", Color: " + this->color + ", Precio: $" + this ->precio + ", Ocupantes: " +this->ocupantes + ", Kilometraje: " + this->kilometraje + "km";
+Automovil::Automovil(std::string marca, std::string modelo, std::string color, int ocupantes, float precio) {
+    this->marca=marca;
+    this->modelo=modelo;
+    this->color=color;
+    this->ocupantes=ocupantes;
+    this->precio=precio;
+    this->kilometraje=0;
+}
 
+void Automovil::avanzar(int kilometros) {
+    this->kilometraje=this->kilometraje+kilometros;
 }
